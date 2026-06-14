@@ -1,2 +1,16 @@
-# portal-anjos-da-prosperidade
-Site institucional e página de vendas do Portal dos Anjos da Prosperidade™ — leituras energéticas individuais com Mesa Radiônica de Prosperidade, ancoradas na energia dos Anjos da Consciência Divina.
+# Portal dos Anjos da Prosperidade™
+
+Site institucional hospedado em Netlify.
+
+## Stack
+- HTML/CSS estático ou framework definido
+- Deploy automático via Netlify
+- Domínio: portalanjosdaprosperidade.com.br
+
+## Estrutura
+- Página de vendas — Leitura Individual R$197
+- Integração com checkout Eduzz/Nutror
+- Meta Pixel configurado
+
+## Documentação interna
+Documentação estratégica e operacional mantida separadamente (não versionada neste repositório).
