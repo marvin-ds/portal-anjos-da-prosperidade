@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal dos Anjos da Prosperidade™ — Leitura Radiônica Individual</title>
+  <meta name="description" content="Leitura Individual na Mesa Radiônica de Prosperidade. Mapeie o padrão energético que trava sua prosperidade. Relatório personalizado em até 48h. R$197." />
+  <meta property="og:title" content="Portal dos Anjos da Prosperidade™" />
+  <meta property="og:description" content="Leio o padrão invisível que trava sua prosperidade. Leitura radiônica individual conduzida por praticante certificada. Entrega em até 48h." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕊️</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ── RESET & BASE ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.7;
+      background: #1C1B2E;
+      color: #F5F0E8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── CSS VARIABLES ── */
+    :root {
+      --noite-profunda: #1C1B2E;
+      --roxo-anjo: #6B5FA6;
+      --dourado-suave: #C4A882;
+      --creme-lunar: #F5F0E8;
+      --lavanda-nevoa: #E8E4F0;
+      --violeta-medio: #9B8DC4;
+      --cinza-nevoa: #8A8799;
+      --dourado-rgba-30: rgba(196,168,130,0.30);
+      --roxo-rgba-20: rgba(107,95,166,0.20);
+      --roxo-rgba-30: rgba(107,95,166,0.30);
+    }
+
+    /* ── TYPOGRAPHY ── */
+    .font-display { font-family: 'Cormorant Garamond', serif; }
+    .font-italic  { font-family: 'Cormorant Garamond', serif; font-style: italic; }
+
+    /* ── UTILITIES ── */
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; overflow: hidden; clip: rect(0,0,0,0);
+      white-space: nowrap; border: 0;
+    }
+    .divider-gold {
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(196,168,130,0.5) 30%, rgba(196,168,130,0.5) 70%, transparent);
+      margin: 0;
+    }
+
+    /* ── FADE-IN ANIMATION ── */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      opacity: 0;
+      animation: fadeInUp 0.7s ease forwards;
+    }
+    .fade-in-1 { animation-delay: 0.1s; }
+    .fade-in-2 { animation-delay: 0.25s; }
+    .fade-in-3 { animation-delay: 0.4s; }
+    .fade-in-4 { animation-delay: 0.55s; }
+
+    /* ════════════════════════════════
+       1. HEADER / NAV
+    ════════════════════════════════ */
+    #header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(28,27,46,0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(196,168,130,0.15);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+      gap: 16px;
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 17px;
+      color: var(--dourado-suave);
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--cinza-nevoa);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--dourado-suave); }
+    .btn-nav {
+      display: inline-block;
+      padding: 9px 22px;
+      background: var(--dourado-suave);
+      color: var(--noite-profunda);
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background 0.2s, color 0.2s;
+      white-space: nowrap;
+    }
+    .btn-nav:hover { background: #d4b892; }
+
+    /* Mobile nav toggle */
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 22px;
+      height: 1.5px;
+      background: var(--dourado-suave);
+      transition: transform 0.25s;
+    }
+    #nav-check { display: none; }
+    @media (max-width: 768px) {
+      .nav-toggle { display: flex; }
+      .nav-menu {
+        display: none;
+        position: absolute;
+        top: 68px; left: 0; right: 0;
+        background: rgba(28,27,46,0.99);
+        padding: 24px;
+        border-bottom: 1px solid rgba(196,168,130,0.15);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+      }
+      #nav-check:checked ~ .nav-inner .nav-menu { display: flex; }
+      .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        width: 100%;
+      }
+      .nav-links li { width: 100%; }
+      .nav-links a {
+        display: block;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(196,168,130,0.08);
+        width: 100%;
+        font-size: 14px;
+      }
+      .btn-nav { margin-top: 16px; display: block; text-align: center; }
+    }
+
+    /* ════════════════════════════════
+       2. HERO
+    ════════════════════════════════ */
+    #hero {
+      min-height: 100vh;
+      background-color: var(--noite-profunda);
+      background-image:
+        radial-gradient(circle, rgba(196,168,130,0.18) 1px, transparent 1px);
+      background-size: 24px 24px;
+      display: flex;
+      align-items: center;
+      padding: 120px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    #hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(ellipse 70% 60% at 50% 40%, rgba(107,95,166,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      text-align: center;
+      max-width: 820px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-overline {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--dourado-suave);
+      margin-bottom: 28px;
+    }
+    .hero-headline {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 56px;
+      line-height: 1.18;
+      color: var(--creme-lunar);
+      margin-bottom: 28px;
+      letter-spacing: -0.01em;
+    }
+    .hero-sub {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--violeta-medio);
+      margin-bottom: 48px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero-ctas {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .btn-primary {
+      display: inline-block;
+      padding: 18px 44px;
+      background: var(--dourado-suave);
+      color: var(--noite-profunda);
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      letter-spacing: 0.06em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background 0.25s, transform 0.15s;
+    }
+    .btn-primary:hover { background: #d4b892; transform: translateY(-1px); }
+    .hero-link {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      color: var(--violeta-medio);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(155,141,196,0.35);
+      padding-bottom: 2px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .hero-link:hover { color: var(--dourado-suave); border-color: rgba(196,168,130,0.5); }
+    .hero-divider {
+      margin-top: 64px;
+    }
+
+    @media (max-width: 768px) {
+      .hero-headline { font-size: 34px; }
+      .hero-sub { font-size: 16px; }
+      .btn-primary { padding: 16px 32px; font-size: 14px; }
+    }
+
+    /* ════════════════════════════════
+       3. ESPELHO DE DORES
+    ════════════════════════════════ */
+    #dores {
+      background: var(--noite-profunda);
+      padding: 96px 0;
+    }
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 1.2;
+      color: var(--dourado-suave);
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .dores-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+    .dor-card {
+      background: rgba(255,255,255,0.03);
+      border-left: 3px solid var(--dourado-suave);
+      padding: 32px 28px;
+      position: relative;
+    }
+    .dor-card p {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 1.45;
+      color: var(--creme-lunar);
+      letter-spacing: 0.01em;
+    }
+    .dores-closing {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 22px;
+      color: var(--creme-lunar);
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto;
+      line-height: 1.55;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 768px) {
+      .dores-grid { grid-template-columns: 1fr; gap: 16px; }
+      .section-title { font-size: 32px; }
+    }
+
+    /* ════════════════════════════════
+       4. COMO FUNCIONA
+    ════════════════════════════════ */
+    #como-funciona {
+      background: var(--lavanda-nevoa);
+      padding: 96px 0;
+    }
+    #como-funciona .section-title { color: var(--noite-profunda); }
+    .timeline {
+      max-width: 680px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 19px;
+      top: 8px;
+      bottom: 8px;
+      width: 1px;
+      background: linear-gradient(to bottom, var(--dourado-suave), rgba(196,168,130,0.2));
+    }
+    .timeline-step {
+      display: flex;
+      gap: 28px;
+      margin-bottom: 44px;
+      position: relative;
+    }
+    .timeline-step:last-child { margin-bottom: 0; }
+    .step-dot {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1.5px solid var(--dourado-suave);
+      background: var(--lavanda-nevoa);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: 17px;
+      color: var(--dourado-suave);
+      position: relative;
+      z-index: 1;
+    }
+    .step-content { padding-top: 6px; }
+    .step-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: 22px;
+      color: var(--noite-profunda);
+      margin-bottom: 6px;
+    }
+    .step-desc {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      color: #4a495e;
+      line-height: 1.65;
+    }
+
+    @media (max-width: 768px) {
+      .timeline::before { left: 15px; }
+      .step-dot { width: 32px; height: 32px; font-size: 14px; }
+    }
+
+    /* ════════════════════════════════
+       5. O QUE VOCÊ RECEBE
+    ════════════════════════════════ */
+    #recebe {
+      background: var(--noite-profunda);
+      padding: 96px 0;
+    }
+    #recebe .section-title { color: var(--dourado-suave); }
+    .recebe-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+    .check-list { list-style: none; }
+    .check-list li {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 18px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      color: var(--creme-lunar);
+      line-height: 1.55;
+    }
+    .check-icon {
+      color: var(--dourado-suave);
+      font-size: 15px;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+    .disclaimer-box {
+      background: var(--roxo-rgba-30);
+      border: 1px solid rgba(196,168,130,0.35);
+      padding: 32px 28px;
+    }
+    .disclaimer-box p {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      color: var(--creme-lunar);
+      line-height: 1.75;
+      opacity: 0.85;
+    }
+    .disclaimer-box strong {
+      font-weight: 400;
+      color: var(--dourado-suave);
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 17px;
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .recebe-grid { grid-template-columns: 1fr; gap: 32px; }
+    }
+
+    /* ════════════════════════════════
+       6. PARA QUEM É
+    ════════════════════════════════ */
+    #para-quem {
+      background: var(--lavanda-nevoa);
+      padding: 96px 0;
+    }
+    #para-quem .section-title { color: var(--noite-profunda); }
+    .para-quem-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+    .para-col {
+      padding: 40px 36px;
+      background: rgba(255,255,255,0.55);
+    }
+    .para-col-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: 26px;
+      margin-bottom: 24px;
+    }
+    .para-col-title.yes { color: var(--roxo-anjo); }
+    .para-col-title.no  { color: var(--cinza-nevoa); }
+    .para-col ul { list-style: none; }
+    .para-col ul li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      margin-bottom: 14px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      color: #3a3952;
+      line-height: 1.6;
+    }
+    .bullet-yes { color: var(--roxo-anjo); flex-shrink: 0; margin-top: 2px; }
+    .bullet-no  { color: var(--cinza-nevoa); flex-shrink: 0; margin-top: 2px; }
+
+    @media (max-width: 768px) {
+      .para-quem-grid { grid-template-columns: 1fr; }
+      .para-col { padding: 28px 24px; }
+    }
+
+    /* ════════════════════════════════
+       7. SOBRE A PRATICANTE
+    ════════════════════════════════ */
+    #sobre {
+      background: var(--noite-profunda);
+      padding: 96px 0;
+    }
+    #sobre .section-title { color: var(--dourado-suave); }
+    .sobre-grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 64px;
+      align-items: center;
+    }
+    .sobre-text p {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      color: var(--creme-lunar);
+      line-height: 1.85;
+      margin-bottom: 20px;
+      opacity: 0.9;
+    }
+    .sobre-text p:last-child { margin-bottom: 0; }
+    /* CSS concentric circles decorative element */
+    .radionic-visual {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      flex-shrink: 0;
+    }
+    .radionic-visual::before,
+    .radionic-visual::after,
+    .radionic-inner,
+    .radionic-core {
+      position: absolute;
+      border-radius: 50%;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .radionic-visual::before {
+      content: '';
+      width: 200px; height: 200px;
+      border: 1px solid rgba(196,168,130,0.20);
+    }
+    .radionic-visual::after {
+      content: '';
+      width: 156px; height: 156px;
+      border: 1px solid rgba(196,168,130,0.35);
+    }
+    .radionic-inner {
+      width: 110px; height: 110px;
+      border: 1px solid rgba(196,168,130,0.55);
+    }
+    .radionic-mid {
+      position: absolute;
+      width: 72px; height: 72px;
+      border-radius: 50%;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid rgba(196,168,130,0.75);
+    }
+    .radionic-core {
+      width: 36px; height: 36px;
+      background: rgba(196,168,130,0.12);
+      border: 1.5px solid var(--dourado-suave);
+    }
+    .radionic-label {
+      position: absolute;
+      bottom: -28px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Lato', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(196,168,130,0.5);
+      white-space: nowrap;
+    }
+
+    @media (max-width: 768px) {
+      .sobre-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+      .radionic-visual {
+        margin: 0 auto;
+        margin-bottom: 16px;
+      }
+    }
+
+    /* ════════════════════════════════
+       8. DEPOIMENTOS
+    ════════════════════════════════ */
+    #depoimentos {
+      background: #EDEAD8;
+      padding: 96px 0;
+    }
+    #depoimentos .section-title { color: var(--noite-profunda); }
+    .depo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 28px;
+    }
+    .depo-card {
+      background: var(--creme-lunar);
+      border-top: 3px solid var(--dourado-suave);
+      padding: 32px 28px;
+    }
+    .depo-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 19px;
+      line-height: 1.6;
+      color: #2a2938;
+      margin-bottom: 20px;
+    }
+    .depo-quote::before { content: '"'; color: var(--dourado-suave); }
+    .depo-quote::after  { content: '"'; color: var(--dourado-suave); }
+    .depo-author {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      color: var(--cinza-nevoa);
+      text-transform: uppercase;
+    }
+    .depo-note {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+      font-style: italic;
+      color: var(--cinza-nevoa);
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .depo-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ════════════════════════════════
+       9. OFERTA / CTA PRINCIPAL
+    ════════════════════════════════ */
+    #oferta {
+      background: var(--noite-profunda);
+      padding: 96px 0;
+      text-align: center;
+    }
+    .oferta-inner { max-width: 680px; margin: 0 auto; }
+    .oferta-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 44px;
+      line-height: 1.2;
+      color: var(--creme-lunar);
+      margin-bottom: 24px;
+      letter-spacing: -0.01em;
+    }
+    .oferta-preco {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 72px;
+      color: var(--dourado-suave);
+      line-height: 1;
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+    .oferta-preco-note {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+      color: var(--cinza-nevoa);
+      margin-bottom: 40px;
+      letter-spacing: 0.05em;
+    }
+    .oferta-includes {
+      list-style: none;
+      margin-bottom: 36px;
+      text-align: left;
+      display: inline-block;
+    }
+    .oferta-includes li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      margin-bottom: 12px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      color: var(--creme-lunar);
+    }
+    .oferta-includes .check-icon { color: var(--dourado-suave); }
+    .order-bump {
+      background: rgba(107,95,166,0.15);
+      border: 1px solid rgba(107,95,166,0.4);
+      padding: 20px 28px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .order-bump p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      color: var(--violeta-medio);
+    }
+    .order-bump strong {
+      color: var(--dourado-suave);
+      font-weight: 400;
+    }
+    .btn-cta-main {
+      display: inline-block;
+      padding: 22px 56px;
+      background: var(--dourado-suave);
+      color: var(--noite-profunda);
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 0.07em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background 0.25s, transform 0.15s;
+      margin-bottom: 24px;
+    }
+    .btn-cta-main:hover { background: #d4b892; transform: translateY(-2px); }
+    .trust-line {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+      color: var(--cinza-nevoa);
+      margin-bottom: 40px;
+    }
+    .trust-line .lock { color: var(--dourado-suave); font-size: 14px; }
+    .garantia-box {
+      border: 1px solid rgba(107,95,166,0.45);
+      padding: 28px 32px;
+      text-align: center;
+    }
+    .garantia-box p {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      color: var(--creme-lunar);
+      line-height: 1.7;
+      opacity: 0.85;
+    }
+    .garantia-box strong {
+      font-weight: 400;
+      color: var(--violeta-medio);
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .oferta-title { font-size: 30px; }
+      .oferta-preco { font-size: 56px; }
+      .btn-cta-main { padding: 18px 36px; font-size: 14px; }
+    }
+
+    /* ════════════════════════════════
+       10. FAQ
+    ════════════════════════════════ */
+    #faq {
+      background: var(--lavanda-nevoa);
+      padding: 96px 0;
+    }
+    #faq .section-title { color: var(--noite-profunda); }
+    .faq-list {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    details {
+      border-bottom: 1px solid rgba(107,95,166,0.25);
+    }
+    details:first-of-type { border-top: 1px solid rgba(107,95,166,0.25); }
+    summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      padding: 22px 4px;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: 21px;
+      color: var(--noite-profunda);
+      list-style: none;
+      gap: 16px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: '+';
+      color: var(--dourado-suave);
+      font-size: 24px;
+      font-weight: 300;
+      flex-shrink: 0;
+      transition: transform 0.25s;
+    }
+    details[open] summary::after {
+      transform: rotate(45deg);
+    }
+    .faq-answer {
+      padding: 0 4px 24px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      color: #4a495e;
+      line-height: 1.75;
+    }
+
+    @media (max-width: 768px) {
+      summary { font-size: 18px; }
+    }
+
+    /* ════════════════════════════════
+       11. FOOTER
+    ════════════════════════════════ */
+    #footer {
+      background: #14131F;
+      padding: 56px 0 40px;
+      text-align: center;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 19px;
+      color: var(--dourado-suave);
+      letter-spacing: 0.03em;
+      margin-bottom: 24px;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+    .footer-links a {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--cinza-nevoa);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .footer-links a:hover {
+      color: var(--dourado-suave);
+      border-color: rgba(196,168,130,0.4);
+    }
+    .footer-divider {
+      margin-bottom: 28px;
+    }
+    .footer-disclaimer {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      color: var(--cinza-nevoa);
+      line-height: 1.8;
+      max-width: 680px;
+      margin: 0 auto 28px;
+      opacity: 0.7;
+    }
+    .footer-copy {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      color: rgba(138,135,153,0.5);
+      letter-spacing: 0.04em;
+    }
+
+    /* ════════════════════════════════
+       SECTION PADDING MOBILE
+    ════════════════════════════════ */
+    @media (max-width: 768px) {
+      #dores, #como-funciona, #recebe, #para-quem,
+      #sobre, #depoimentos, #oferta, #faq {
+        padding: 64px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ════════════════════════════════
+     1. HEADER / NAV
+════════════════════════════════ -->
+<header id="header">
+  <div class="container">
+    <input type="checkbox" id="nav-check" aria-hidden="true" />
+    <nav class="nav-inner" aria-label="Navegação principal">
+      <a href="#hero" class="nav-logo">Portal dos Anjos da Prosperidade™</a>
+
+      <label for="nav-check" class="nav-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <div class="nav-menu" role="navigation">
+        <ul class="nav-links">
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#recebe">O que você recebe</a></li>
+          <li><a href="#para-quem">Para quem é</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+        </ul>
+        <a href="https://wa.me/SEU_NUMERO?text=Quero%20saber%20mais%20sobre%20a%20leitura%20radi%C3%B4nica%20de%20prosperidade" class="btn-nav" target="_blank" rel="noopener">Quero minha leitura</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+<!-- ════════════════════════════════
+     2. HERO
+════════════════════════════════ -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <p class="hero-overline fade-in fade-in-1">Mesa Radiônica de Prosperidade · Leitura Individual</p>
+
+      <h1 class="hero-headline fade-in fade-in-2">
+        Sua relação com dinheiro<br>tem um padrão energético.<br>
+        <em style="font-style:italic;color:var(--dourado-suave);">A Mesa Radiônica de Prosperidade consegue mapeá-lo.</em>
+      </h1>
+
+      <p class="hero-sub fade-in fade-in-3">
+        Leitura energética individual conduzida por praticante certificada,<br>
+        ancorada na energia dos Anjos da Consciência Divina.<br>
+        Entrega em relatório personalizado em até 48 horas.
+      </p>
+
+      <div class="hero-ctas fade-in fade-in-4">
+        <a href="https://wa.me/SEU_NUMERO?text=Quero%20saber%20mais%20sobre%20a%20leitura%20radi%C3%B4nica%20de%20prosperidade" class="btn-primary" target="_blank" rel="noopener">
+          Quero minha leitura — R$197
+        </a>
+        <a href="#como-funciona" class="hero-link">Entender como funciona ↓</a>
+      </div>
+
+      <div class="hero-divider">
+        <div class="divider-gold"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════
+     3. ESPELHO DE DORES
+════════════════════════════════ -->
+<section id="dores">
+  <div class="container">
+    <h2 class="section-title">Você reconhece alguma dessas situações?</h2>
+
+    <div class="dores-grid">
+      <div class="dor-card">
+        <p>O dinheiro entra — mas some antes de sobrar.</p>
+      </div>
+      <div class="dor-card">
+        <p>Os projetos chegam perto de acontecer. E travam.</p>
+      </div>
+      <div class="dor-card">
+        <p>O ciclo de dívida fecha e abre, fecha e abre.</p>
+      </div>
+    </div>
+
+    <p class="dores-closing">
+      Não é azar. É um padrão no seu campo energético — e ele tem mapa.
+    </p>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════
+     4. COMO FUNCIONA
+════════════════════════════════ -->
+<section id="como-funciona">
+  <div class="container">
+    <h2 class="section-title">Como funciona a leitura</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-step">
+        <div class="step-dot">1</div>
+        <div class="step-content">
+          <h3 class="step-title">Você reserva sua leitura</h3>
+          <p class="step-desc">Realiza o pagamento e garante sua vaga.</p>
+        </div>
+      </div>
+
+      <div class="timeline-step">
+        <div class="step-dot">2</div>
+        <div class="step-content">
+          <h3 class="step-title">Preenche o formulário</h3>
+          <p class="step-desc">Nome completo, data de nascimento e sua intenção para os próximos 90 dias.</p>
+        </div>
+      </div>
+
+      <div class="timeline-step">
+        <div class="step-dot">3</div>
+        <div class="step-content">
+          <h3 class="step-title">A leitura é conduzida na mesa</h3>
+          <p class="step-desc">Usando seus dados e sua intenção, conduzo a leitura individualmente na Mesa Sintonize Prosperidade, ancorada na energia dos Anjos da Consciência Divina.</p>
+        </div>
+      </div>
+
+      <div class="timeline-step">
+        <div class="step-dot">4</div>
+        <div class="step-content">
+          <h3 class="step-title">Você recebe o relatório</h3>
+          <p class="step-desc">PDF personalizado com os elementos observados, temas para reflexão e orientações — em até 48 horas.</p>
+        </div>
+      </div>
+
+      <div class="timeline-step">
+        <div class="step-dot">5</div>
+        <div class="step-content">
+          <h3 class="step-title">Áudio de ativação <span style="font-size:14px;color:var(--cinza-nevoa);font-weight:300;">(opcional)</span></h3>
+          <p class="step-desc">Inclua o Áudio de Ativação específico para o seu padrão por R$47 — entregue junto com o relatório.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════
+     5. O QUE VOCÊ RECEBE
+════════════════════════════════ -->
+<section id="recebe">
+  <div class="container">
+    <h2 class="section-title">O que está incluído na leitura</h2>
+
+    <div class="recebe-grid">
+      <div>
+        <ul class="check-list">
+          <li>
+            <span class="check-icon">✓</span>
+            Leitura individual conduzida na Mesa Radiônica de Prosperidade
+          </li>
+          <li>
+            <span class="check-icon">✓</span>
+            Relatório PDF personalizado com seus dados e intenção
+          </li>
+          <li>
+            <span class="check-icon">✓</span>
+            Bloqueios observados e campos de expansão identificados
+          </li>
+          <li>
+            <span class="check-icon">✓</span>
+            Temas para reflexão e orientações para os próximos 21–40 dias
+          </li>
+          <li>
+            <span class="check-icon">✓</span>
+            Entrega em até 48 horas úteis
+          </li>
+          <li>
+            <span class="check-icon">✓</span>
+            Áudio de Ativação específico para seu perfil
+            <span style="font-size:13px;color:var(--cinza-nevoa);margin-left:4px;">(opcional +R$47)</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="disclaimer-box">
+        <strong>Sobre a natureza deste serviço</strong>
+        <p>
+          Esta é uma experiência energética e intuitiva.
+          Não é terapia, não é consultoria financeira e não promete
+          resultado financeiro específico.<br><br>
+          O relatório é baseado na leitura conduzida com seus dados
+          e reflete a interpretação dentro da prática radiônica.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════
+     6. PARA QUEM É / PARA QUEM NÃO É
+════════════════════════════════ -->
+<section id="para-quem">
+  <div class="container">
+    <h2 class="section-title">Este serviço é para você?</h2>
+
+    <div class="para-quem-grid">
+
+      <div class="para-col">
+        <h3 class="para-col-title yes">Para você se…</h3>
+        <ul>
+          <li>
+            <span class="bullet-yes">•</span>
+            Você tem abertura para práticas energéticas e espiritualidade
+          </li>
+          <li>
+            <span class="bullet-yes">•</span>
+            Reconhece padrões financeiros que se repetem e quer refletir sobre eles
+          </li>
+          <li>
+            <span class="bullet-yes">•</span>
+            Busca uma experiência individual e personalizada
+          </li>
+          <li>
+            <span class="bullet-yes">•</span>
+            Compreende que o serviço tem natureza intuitiva e energética
+          </li>
+          <li>
+            <span class="bullet-yes">•</span>
+            Quer clareza sobre temas relacionados à prosperidade
+          </li>
+        </ul>
+      </div>
+
+      <div class="para-col">
+        <h3 class="para-col-title no">Não é para você se…</h3>
+        <ul>
+          <li>
+            <span class="bullet-no">•</span>
+            Você espera garantia de resultado financeiro
+          </li>
+          <li>
+            <span class="bullet-no">•</span>
+            Busca consultoria de investimentos ou planejamento financeiro
+          </li>
+          <li>
+            <span class="bullet-no">•</span>
+            Procura diagnóstico ou tratamento médico/psicológico
+          </li>
+          <li>
+            <span class="bullet-no">•</span>
+            Não acredita ou não se interessa por práticas energéticas
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════
+     7. SOBRE A PRATICANTE E O INSTRUMENTO
+════════════════════════════════ -->
+<section id="sobre">
+  <div class="container">
+    <h2 class="section-title">Sobre o trabalho</h2>
+
+    <div class="sobre-grid">
+      <div class="sobre-text">
+        <p>
+          Sou praticante certificada em Mesas Radiônicas com especialização em
+          Prosperidade. O trabalho que conduzo utiliza a Mesa Sintonize Prosperidade —
+          um instrumento radiônico com a Roda da Prosperidade, símbolos sagrados,
+          anjos cabalísticos e o relógio radiestésico — tudo ancorado na energia
+          dos Anjos da Consciência Divina.
+        </p>
+        <p>
+          O que entrego não é curso, não é terapia e não é coaching.
+          É uma leitura energética conduzida com seus dados, devolvida em
+          relatório personalizado.
+        </p>
+      </div>
+
+      <div>
+        <div class="radionic-visual" role="img" aria-label="Representação simbólica do campo radiônico">
+          <div class="radionic-inner"></div>
+          <div class="radionic-mid"></div>
+          <div class="radionic-core"></div>
+          <span class="radionic-label">Campo Radiônico</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════
+     8. DEPOIMENTOS
+════════════════════════════════ -->
+<section id="depoimentos">
+  <div class="container">
+    <h2 class="section-title">O que dizem sobre a experiência</h2>
+
+    <div class="depo-grid">
+
+      <div class="depo-card">
+        <p class="depo-quote">A leitura descreveu exatamente o padrão que eu vivia sem conseguir nomear.</p>
+        <p class="depo-author">— M.S.</p>
+      </div>
+
+      <div class="depo-card">
+        <p class="depo-quote">Nunca tinha pensado nessa relação entre o meu comportamento e o bloqueio que ela identificou. O relatório foi muito mais específico do que eu esperava.</p>
+        <p class="depo-author">— A.R.</p>
+      </div>
+
+      <div class="depo-card">
+        <p class="depo-quote">Recebi o relatório em menos de 48 horas. Cada parte era sobre mim — não parecia genérico.</p>
+        <p class="depo-author">— C.M.</p>
+      </div>
+
+    </div>
+
+    <p class="depo-note">Depoimentos referem-se à experiência da leitura. Resultados financeiros não são garantidos.</p>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════
+     9. OFERTA / CTA PRINCIPAL
+════════════════════════════════ -->
+<section id="oferta">
+  <div class="divider-gold" style="margin-bottom:0;"></div>
+  <div class="container" style="padding-top:96px;padding-bottom:96px;">
+    <div class="oferta-inner">
+
+      <h2 class="oferta-title">Leitura Individual na Mesa Radiônica de Prosperidade</h2>
+
+      <div class="oferta-preco">R$197</div>
+      <p class="oferta-preco-note">pagamento único · entrega digital</p>
+
+      <ul class="oferta-includes">
+        <li><span class="check-icon">✓</span> Leitura individual na Mesa Sintonize Prosperidade</li>
+        <li><span class="check-icon">✓</span> Relatório PDF personalizado com seus dados</li>
+        <li><span class="check-icon">✓</span> Bloqueios e campos de expansão identificados</li>
+        <li><span class="check-icon">✓</span> Orientações para os próximos 21–40 dias</li>
+        <li><span class="check-icon">✓</span> Entrega em até 48 horas úteis</li>
+      </ul>
+
+      <div class="order-bump">
+        <p>+ <strong>Áudio de Ativação para o seu padrão: R$47</strong><br>
+        <span style="font-size:14px;color:var(--cinza-nevoa);font-family:'Lato',sans-serif;font-weight:300;">Entregue junto com o relatório · opcional</span></p>
+      </div>
+
+      <a href="https://wa.me/SEU_NUMERO?text=Quero%20saber%20mais%20sobre%20a%20leitura%20radi%C3%B4nica%20de%20prosperidade" class="btn-cta-main" target="_blank" rel="noopener">
+        Quero minha leitura agora →
+      </a>
+
+      <div class="trust-line">
+        <span class="lock">🔒</span>
+        Compra segura · Entrega em até 48h · Garantia de 7 dias
+      </div>
+
+      <div class="garantia-box">
+        <strong>Garantia de 7 dias</strong>
+        <p>
+          Se a leitura não trouxer nenhum reconhecimento do seu padrão,
+          reembolso sem perguntas.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════
+     10. FAQ
+════════════════════════════════ -->
+<section id="faq">
+  <div class="container">
+    <h2 class="section-title">Perguntas frequentes</h2>
+
+    <div class="faq-list">
+
+      <details>
+        <summary>Preciso estar online durante a leitura?</summary>
+        <p class="faq-answer">Não. A leitura é realizada de forma assíncrona com seus dados. Você não precisa estar presente.</p>
+      </details>
+
+      <details>
+        <summary>O relatório é automático ou gerado por IA?</summary>
+        <p class="faq-answer">Não. Existe um template estruturado para manter a qualidade, mas a leitura é conduzida individualmente e o conteúdo reflete o que foi observado especificamente para você.</p>
+      </details>
+
+      <details>
+        <summary>Isso vai me ajudar a ganhar dinheiro?</summary>
+        <p class="faq-answer">A leitura não promete resultado financeiro específico. É uma experiência energética e intuitiva de reflexão sobre prosperidade — não substitui planejamento financeiro, consultoria ou orientação profissional.</p>
+      </details>
+
+      <details>
+        <summary>Quanto tempo após o pagamento recebo o relatório?</summary>
+        <p class="faq-answer">Em até 48 horas úteis após o preenchimento do formulário com seus dados.</p>
+      </details>
+
+      <details>
+        <summary>Meus dados ficam seguros?</summary>
+        <p class="faq-answer">Sim. Nome, data de nascimento e intenção são utilizados exclusivamente para a condução da leitura, conforme a LGPD.</p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════
+     11. FOOTER
+════════════════════════════════ -->
+<footer id="footer">
+  <div class="container">
+
+    <p class="footer-logo">Portal dos Anjos da Prosperidade™</p>
+
+    <nav class="footer-links" aria-label="Links do rodapé">
+      <a href="#">Política de Privacidade</a>
+      <a href="#">Termos de Uso</a>
+      <a href="https://wa.me/SEU_NUMERO" target="_blank" rel="noopener">Suporte</a>
+    </nav>
+
+    <div class="divider-gold footer-divider"></div>
+
+    <p class="footer-disclaimer">
+      Este serviço tem natureza energética e intuitiva, conduzido por praticante certificada em Mesas Radiônicas.
+      Não constitui terapia, tratamento médico, psicológico ou aconselhamento financeiro.
+      Não promete resultado financeiro específico. Resultados e experiências individuais variam.
+    </p>
+
+    <p class="footer-copy">© 2026 Portal dos Anjos da Prosperidade™</p>
+
+  </div>
+</footer>
+
+</body>
+</html>
